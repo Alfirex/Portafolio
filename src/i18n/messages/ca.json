@@ -1,0 +1,145 @@
+{
+  "nav": {
+    "about": "Sobre mi",
+    "experience": "Experiència",
+    "technologies": "Tecnologies",
+    "projects": "Projectes",
+    "contact": "Contacte",
+    "toggle_theme_dark": "Activar mode fosc",
+    "toggle_theme_light": "Activar mode clar"
+  },
+  "hero": {
+    "title": "Desenvolupador d'Aplicacions Web",
+    "location": "Catarroja, València · Espanya",
+    "meta_role": "DEV",
+    "meta_exp": "6+ ANYS EXP.",
+    "scroll_hint": "Desplaça't"
+  },
+  "about": {
+    "tag": "Sobre mi",
+    "headline": "Apassionat del desenvolupament web amb més de 6 anys d'experiència",
+    "p1": "Sóc Alejandro Ajenjo Rodríguez, desenvolupador web amb més de 6 anys d'experiència construint aplicacions en el sector turístic i de lloguers vacacionals. M'especialitze en el desenvolupament front-end, creant interfícies netes, funcionals i ben dissenyades.",
+    "p2": "Al llarg de la meua carrera he col·laborat amb equips àgils, treballant amb tecnologies com HTML5, CSS3, JavaScript, PHP i MySQL. Disfrute tant del detall visual com de la integració amb el back-end, buscant sempre la solució més eficient.",
+    "pills": ["Orientat al detall", "Treball en equip", "Aprenentatge continu", "Codi net"],
+    "available": "Disponible"
+  },
+  "stats": {
+    "aria_label": "Estadístiques professionals",
+    "years": "Anys d'experiència",
+    "companies": "Empreses",
+    "technologies": "Tecnologies",
+    "projects": "Projectes"
+  },
+  "experience": {
+    "section_title": "Experiència",
+    "present": "Present",
+    "years": "anys",
+    "months": "mesos",
+    "jobs": {
+      "avantio": {
+        "title": "Desenvolupador Web",
+        "company": "Avantio",
+        "period": "feb. 2019 – des. 2025",
+        "duration": "6 anys 11 mesos",
+        "location": "Parc Tecnològic de Paterna",
+        "description": "Desenvolupament d'aplicacions web en el sector turístic i de gestió de lloguers vacacionals.",
+        "skills": ["HTML5", "PHP", "JavaScript", "CSS3", "MySQL", "Git"]
+      },
+      "recexval": {
+        "title": "Desenvolupador Front-end",
+        "company": "Recexval",
+        "period": "nov. 2016 – mai. 2017",
+        "duration": "7 mesos",
+        "location": "València i voltants",
+        "description": "Redisseny i maquetació del gestor d'administrador de la plataforma.",
+        "skills": ["HTML5", "CSS3", "JavaScript", "jQuery"]
+      },
+      "florida": {
+        "title": "Empleat en Pràctiques",
+        "company": "Florida Universitària",
+        "period": "mar. 2016 – mai. 2016",
+        "duration": "3 mesos",
+        "location": "València i voltants",
+        "description": "Pràctiques com a tècnic en manteniment de sistemes informàtics.",
+        "skills": ["Suport tècnic", "Manteniment"]
+      }
+    }
+  },
+  "education": {
+    "index": "02",
+    "section_title": "Educació",
+    "items": {
+      "daw": {
+        "degree": "CFGS Desenvolupament d'Aplicacions Web",
+        "institution": "Florida Universitària",
+        "period": "2014 – 2016",
+        "location": "Catarroja, València",
+        "description": "Cicle Formatiu de Grau Superior enfocat en el disseny, desenvolupament i manteniment d'aplicacions web. Mòduls d'HTML, CSS, JavaScript, PHP, bases de dades i desplegament d'aplicacions."
+      },
+      "bachillerato": {
+        "degree": "CFGM Sistemes Microinformàtics i Xarxes",
+        "institution": "Centre formatiu (actualitza amb el teu centre real)",
+        "period": "2012 – 2014",
+        "location": "València, Espanya",
+        "description": "Cicle Formatiu de Grau Mitjà orientat al muntatge, configuració i manteniment d'equips i xarxes de comunicació."
+      }
+    }
+  },
+  "technologies": {
+    "section_title": "Tecnologies",
+    "description": "Eines i llenguatges amb els quals treballe cada dia.",
+    "categories": {
+      "frontend": "Frontend",
+      "backend": "Backend",
+      "tools": "Eines"
+    }
+  },
+  "certifications": {
+    "index": "04",
+    "section_title": "Certificacions",
+    "verify": "Veure certificat",
+    "items": {
+      "cert1": "Disseny Web Responsiu",
+      "cert2": "Algorismes i Estructures de Dades en JavaScript",
+      "cert3": "Desenvolupament Web Complet amb HTML5, CSS3 i JavaScript",
+      "cert4": "Fonaments del Desenvolupament Web"
+    }
+  },
+  "projects": {
+    "section_title": "Projectes",
+    "coming_soon": "Pròximament",
+    "status_badge": "En construcció",
+    "description": "Ací apareixeran els meus projectes personals i professionals. Torna prompte."
+  },
+  "contact": {
+    "section_title": "Contacte",
+    "subtitle": "Tens un projecte en ment? Escriu-me.",
+    "form": {
+      "name_label": "Nom",
+      "name_placeholder": "El teu nom",
+      "email_label": "Correu",
+      "email_placeholder": "tu@correu.com",
+      "subject_label": "Assumpte",
+      "subject_placeholder": "De què vols parlar?",
+      "message_label": "Missatge",
+      "message_placeholder": "Explica'm el teu projecte o idea...",
+      "submit": "Enviar missatge",
+      "submitting": "Enviant...",
+      "success_title": "Missatge enviat!",
+      "success_text": "Em posaré en contacte amb tu aviat.",
+      "error_text": "Alguna cosa ha anat malament. Torna-ho a intentar.",
+      "required": "Aquest camp és obligatori",
+      "invalid_email": "Correu no vàlid"
+    },
+    "links": {
+      "title": "També pots trobar-me a",
+      "download_cv": "Descarregar CV",
+      "linkedin": "LinkedIn",
+      "github": "GitHub"
+    }
+  },
+  "footer": {
+    "copyright": "© 2026 Alejandro Ajenjo Rodríguez",
+    "version": "v1.0"
+  }
+}

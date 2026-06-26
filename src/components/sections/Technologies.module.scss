@@ -1,0 +1,108 @@
+.section {
+  padding: var(--spacing-120) var(--spacing-48);
+  border-top: 1px solid var(--border-subtle);
+
+  @media (max-width: 768px) {
+    padding: var(--spacing-72) var(--spacing-24);
+  }
+}
+
+.title {
+  will-change: opacity, transform;
+}
+
+.description {
+  font-family: var(--font-ui), ui-sans-serif, system-ui, sans-serif;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 1.6;
+  color: var(--text-muted);
+  max-width: 560px;
+  margin-bottom: var(--spacing-72);
+  margin-top: calc(-1 * var(--spacing-48));
+}
+
+// ── Groups ────────────────────────────────────────────────────────────
+.groups {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-48);
+}
+
+.group {
+  will-change: opacity, transform;
+}
+
+.groupLabel {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-12);
+  font-family: var(--font-mono), ui-monospace, monospace;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--text-secondary);
+  margin-bottom: var(--spacing-18);
+}
+
+.groupDot {
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: var(--color-ember);
+  flex-shrink: 0;
+}
+
+// ── Cards grid ────────────────────────────────────────────────────────
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-12);
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-12);
+  padding: var(--spacing-12) var(--spacing-18);
+  background: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius);
+  cursor: default;
+  will-change: opacity, transform;
+  transition:
+    border-color var(--transition-fast),
+    background var(--transition-fast);
+
+  &:hover {
+    border-color: var(--color-ember);
+    background: var(--bg-elevated);
+  }
+}
+
+.cardInitial {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  background: rgba(255, 76, 36, 0.1);
+  border-radius: 6px;
+  font-family: var(--font-mono), ui-monospace, monospace;
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  color: var(--color-ember);
+  flex-shrink: 0;
+}
+
+.cardName {
+  font-family: var(--font-ui), ui-sans-serif, system-ui, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: -0.01em;
+  color: var(--text-primary);
+  white-space: nowrap;
+}

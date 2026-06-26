@@ -1,0 +1,52 @@
+# ── Dependencias ───────────────────────────────────────────────────
+node_modules
+.pnp
+.pnp.js
+
+# ── Build / salida de Vite ─────────────────────────────────────────
+dist
+dist-ssr
+*.local
+
+# ── Caché de herramientas ──────────────────────────────────────────
+.vite
+.cache
+*.tsbuildinfo
+.eslintcache
+
+# ── Restos de Next.js (por si quedaran) ────────────────────────────
+.next
+out
+
+# ── Tests / cobertura ──────────────────────────────────────────────
+coverage
+.vitest
+
+# ── Variables de entorno ───────────────────────────────────────────
+.env
+.env.*
+!.env.example
+
+# ── Logs ───────────────────────────────────────────────────────────
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# ── Sistema operativo ──────────────────────────────────────────────
+.DS_Store
+.DS_Store?
+._*
+Thumbs.db
+
+# ── Editores / IDE ─────────────────────────────────────────────────
+.vscode/*
+!.vscode/extensions.json
+.idea
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?

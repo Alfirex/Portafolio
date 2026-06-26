@@ -1,0 +1,145 @@
+{
+  "nav": {
+    "about": "Sobre mí",
+    "experience": "Experiencia",
+    "technologies": "Tecnologías",
+    "projects": "Proyectos",
+    "contact": "Contacto",
+    "toggle_theme_dark": "Activar modo oscuro",
+    "toggle_theme_light": "Activar modo claro"
+  },
+  "hero": {
+    "title": "Desarrollador de Aplicaciones Web",
+    "location": "Catarroja, Valencia · España",
+    "meta_role": "DEV",
+    "meta_exp": "6+ AÑOS EXP.",
+    "scroll_hint": "Desplázate"
+  },
+  "about": {
+    "tag": "Sobre mí",
+    "headline": "Apasionado del desarrollo web con más de 6 años de experiencia",
+    "p1": "Soy Alejandro Ajenjo Rodríguez, desarrollador web con más de 6 años de experiencia construyendo aplicaciones en el sector turístico y de alquileres vacacionales. Me especializo en el desarrollo front-end, creando interfaces limpias, funcionales y bien diseñadas.",
+    "p2": "A lo largo de mi carrera he colaborado con equipos ágiles, trabajando con tecnologías como HTML5, CSS3, JavaScript, PHP y MySQL. Disfruto tanto del detalle visual como de la integración con el back-end, buscando siempre la solución más eficiente.",
+    "pills": ["Orientado al detalle", "Trabajo en equipo", "Aprendizaje continuo", "Código limpio"],
+    "available": "Disponible"
+  },
+  "stats": {
+    "aria_label": "Estadísticas profesionales",
+    "years": "Años de experiencia",
+    "companies": "Empresas",
+    "technologies": "Tecnologías",
+    "projects": "Proyectos"
+  },
+  "experience": {
+    "section_title": "Experiencia",
+    "present": "Presente",
+    "years": "años",
+    "months": "meses",
+    "jobs": {
+      "avantio": {
+        "title": "Desarrollador Web",
+        "company": "Avantio",
+        "period": "feb. 2019 – dic. 2025",
+        "duration": "6 años 11 meses",
+        "location": "Parque Tecnológico de Paterna",
+        "description": "Desarrollo de aplicaciones web en el sector turístico y de gestión de alquileres vacacionales.",
+        "skills": ["HTML5", "PHP", "JavaScript", "CSS3", "MySQL", "Git"]
+      },
+      "recexval": {
+        "title": "Desarrollador Front-end",
+        "company": "Recexval",
+        "period": "nov. 2016 – may. 2017",
+        "duration": "7 meses",
+        "location": "Valencia y alrededores",
+        "description": "Rediseño y maquetación del gestor de administrador de la plataforma.",
+        "skills": ["HTML5", "CSS3", "JavaScript", "jQuery"]
+      },
+      "florida": {
+        "title": "Empleado en Prácticas",
+        "company": "Florida Universitaria",
+        "period": "mar. 2016 – may. 2016",
+        "duration": "3 meses",
+        "location": "Valencia y alrededores",
+        "description": "Prácticas como técnico en mantenimiento de sistemas informáticos.",
+        "skills": ["Soporte técnico", "Mantenimiento"]
+      }
+    }
+  },
+  "education": {
+    "index": "02",
+    "section_title": "Educación",
+    "items": {
+      "daw": {
+        "degree": "CFGS Desarrollo de Aplicaciones Web",
+        "institution": "Florida Universitaria",
+        "period": "2014 – 2016",
+        "location": "Catarroja, Valencia",
+        "description": "Ciclo Formativo de Grado Superior enfocado en el diseño, desarrollo y mantenimiento de aplicaciones web. Módulos de HTML, CSS, JavaScript, PHP, bases de datos y despliegue de aplicaciones."
+      },
+      "bachillerato": {
+        "degree": "CFGM Sistemas Microinformáticos y Redes",
+        "institution": "Centro formativo (actualiza con tu centro real)",
+        "period": "2012 – 2014",
+        "location": "Valencia, España",
+        "description": "Ciclo Formativo de Grado Medio orientado al montaje, configuración y mantenimiento de equipos y redes de comunicación."
+      }
+    }
+  },
+  "technologies": {
+    "section_title": "Tecnologías",
+    "description": "Herramientas y lenguajes con los que trabajo en el día a día.",
+    "categories": {
+      "frontend": "Frontend",
+      "backend": "Backend",
+      "tools": "Herramientas"
+    }
+  },
+  "certifications": {
+    "index": "04",
+    "section_title": "Certificaciones",
+    "verify": "Ver certificado",
+    "items": {
+      "cert1": "Diseño Web Responsivo",
+      "cert2": "Algoritmos y Estructuras de Datos en JavaScript",
+      "cert3": "Desarrollo Web Completo con HTML5, CSS3 y JavaScript",
+      "cert4": "Fundamentos del Desarrollo Web"
+    }
+  },
+  "projects": {
+    "section_title": "Proyectos",
+    "coming_soon": "Próximamente",
+    "status_badge": "En construcción",
+    "description": "Aquí aparecerán mis proyectos personales y profesionales. Vuelve pronto."
+  },
+  "contact": {
+    "section_title": "Contacto",
+    "subtitle": "¿Tienes un proyecto en mente? Escríbeme.",
+    "form": {
+      "name_label": "Nombre",
+      "name_placeholder": "Tu nombre",
+      "email_label": "Email",
+      "email_placeholder": "tu@email.com",
+      "subject_label": "Asunto",
+      "subject_placeholder": "¿De qué quieres hablar?",
+      "message_label": "Mensaje",
+      "message_placeholder": "Cuéntame tu proyecto o idea...",
+      "submit": "Enviar mensaje",
+      "submitting": "Enviando...",
+      "success_title": "¡Mensaje enviado!",
+      "success_text": "Me pondré en contacto contigo pronto.",
+      "error_text": "Algo salió mal. Inténtalo de nuevo.",
+      "required": "Este campo es obligatorio",
+      "invalid_email": "Email no válido"
+    },
+    "links": {
+      "title": "También puedes encontrarme en",
+      "download_cv": "Descargar CV",
+      "linkedin": "LinkedIn",
+      "github": "GitHub"
+    }
+  },
+  "footer": {
+    "copyright": "© 2026 Alejandro Ajenjo Rodríguez",
+    "version": "v1.0"
+  }
+}

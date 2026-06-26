@@ -1,0 +1,145 @@
+{
+  "nav": {
+    "about": "About",
+    "experience": "Experience",
+    "technologies": "Technologies",
+    "projects": "Projects",
+    "contact": "Contact",
+    "toggle_theme_dark": "Enable dark mode",
+    "toggle_theme_light": "Enable light mode"
+  },
+  "hero": {
+    "title": "Web Application Developer",
+    "location": "Catarroja, Valencia · Spain",
+    "meta_role": "DEV",
+    "meta_exp": "6+ YRS EXP.",
+    "scroll_hint": "Scroll"
+  },
+  "about": {
+    "tag": "About me",
+    "headline": "Passionate web developer with over 6 years of experience",
+    "p1": "I'm Alejandro Ajenjo Rodríguez, a web developer with over 6 years of experience building applications in the tourism and vacation rental sector. I specialise in front-end development, crafting clean, functional and well-designed interfaces.",
+    "p2": "Throughout my career I've collaborated with agile teams, working with technologies like HTML5, CSS3, JavaScript, PHP and MySQL. I enjoy both the visual detail and back-end integration, always seeking the most efficient solution.",
+    "pills": ["Detail-oriented", "Team player", "Continuous learning", "Clean code"],
+    "available": "Available"
+  },
+  "stats": {
+    "aria_label": "Professional statistics",
+    "years": "Years of experience",
+    "companies": "Companies",
+    "technologies": "Technologies",
+    "projects": "Projects"
+  },
+  "experience": {
+    "section_title": "Experience",
+    "present": "Present",
+    "years": "years",
+    "months": "months",
+    "jobs": {
+      "avantio": {
+        "title": "Web Developer",
+        "company": "Avantio",
+        "period": "Feb. 2019 – Dec. 2025",
+        "duration": "6 years 11 months",
+        "location": "Paterna Technology Park",
+        "description": "Web application development in the tourism and vacation rental management sector.",
+        "skills": ["HTML5", "PHP", "JavaScript", "CSS3", "MySQL", "Git"]
+      },
+      "recexval": {
+        "title": "Front-end Developer",
+        "company": "Recexval",
+        "period": "Nov. 2016 – May 2017",
+        "duration": "7 months",
+        "location": "Valencia area",
+        "description": "Redesign and layout of the platform's admin manager.",
+        "skills": ["HTML5", "CSS3", "JavaScript", "jQuery"]
+      },
+      "florida": {
+        "title": "Intern",
+        "company": "Florida Universitaria",
+        "period": "Mar. 2016 – May 2016",
+        "duration": "3 months",
+        "location": "Valencia area",
+        "description": "Internship as a computer systems maintenance technician.",
+        "skills": ["Technical support", "Maintenance"]
+      }
+    }
+  },
+  "education": {
+    "index": "02",
+    "section_title": "Education",
+    "items": {
+      "daw": {
+        "degree": "HND Web Application Development",
+        "institution": "Florida Universitaria",
+        "period": "2014 – 2016",
+        "location": "Catarroja, Valencia",
+        "description": "Higher National Diploma focused on the design, development and maintenance of web applications. Modules covering HTML, CSS, JavaScript, PHP, databases and application deployment."
+      },
+      "bachillerato": {
+        "degree": "VET Microcomputer Systems and Networks",
+        "institution": "Training centre (update with your real school)",
+        "period": "2012 – 2014",
+        "location": "Valencia, Spain",
+        "description": "Vocational training programme focused on assembling, configuring and maintaining computer equipment and communication networks."
+      }
+    }
+  },
+  "technologies": {
+    "section_title": "Technologies",
+    "description": "Tools and languages I work with on a daily basis.",
+    "categories": {
+      "frontend": "Frontend",
+      "backend": "Backend",
+      "tools": "Tools"
+    }
+  },
+  "certifications": {
+    "index": "04",
+    "section_title": "Certifications",
+    "verify": "View certificate",
+    "items": {
+      "cert1": "Responsive Web Design",
+      "cert2": "JavaScript Algorithms and Data Structures",
+      "cert3": "Full Web Development with HTML5, CSS3 and JavaScript",
+      "cert4": "Web Development Fundamentals"
+    }
+  },
+  "projects": {
+    "section_title": "Projects",
+    "coming_soon": "Coming soon",
+    "status_badge": "Under construction",
+    "description": "My personal and professional projects will appear here. Check back soon."
+  },
+  "contact": {
+    "section_title": "Contact",
+    "subtitle": "Have a project in mind? Let's talk.",
+    "form": {
+      "name_label": "Name",
+      "name_placeholder": "Your name",
+      "email_label": "Email",
+      "email_placeholder": "you@email.com",
+      "subject_label": "Subject",
+      "subject_placeholder": "What do you want to talk about?",
+      "message_label": "Message",
+      "message_placeholder": "Tell me about your project or idea...",
+      "submit": "Send message",
+      "submitting": "Sending...",
+      "success_title": "Message sent!",
+      "success_text": "I'll get back to you soon.",
+      "error_text": "Something went wrong. Please try again.",
+      "required": "This field is required",
+      "invalid_email": "Invalid email address"
+    },
+    "links": {
+      "title": "You can also find me on",
+      "download_cv": "Download CV",
+      "linkedin": "LinkedIn",
+      "github": "GitHub"
+    }
+  },
+  "footer": {
+    "copyright": "© 2026 Alejandro Ajenjo Rodríguez",
+    "version": "v1.0"
+  }
+}

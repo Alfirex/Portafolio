@@ -1,0 +1,103 @@
+.section {
+  padding: var(--spacing-120) var(--spacing-48);
+  border-top: 1px solid var(--border-subtle);
+
+  @media (max-width: 768px) {
+    padding: var(--spacing-72) var(--spacing-24);
+  }
+}
+
+.title {
+  will-change: opacity, transform;
+}
+
+// ── Grid ─────────────────────────────────────────────────────────────
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--spacing-18);
+
+  @media (max-width: 860px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-12);
+  padding: var(--spacing-24);
+  background: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius);
+  will-change: opacity, transform;
+  transition: border-color var(--transition-fast);
+
+  &:hover {
+    border-color: var(--border);
+  }
+}
+
+.cardTop {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-12);
+}
+
+.certIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  background: rgba(255, 76, 36, 0.08);
+  border-radius: 8px;
+  color: var(--color-ember);
+  flex-shrink: 0;
+}
+
+.issuer {
+  font-family: var(--font-mono), ui-monospace, monospace;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-ember);
+  flex: 1;
+}
+
+.date {
+  font-family: var(--font-mono), ui-monospace, monospace;
+  font-size: 11px;
+  font-weight: 500;
+  color: var(--text-secondary);
+  letter-spacing: 0.04em;
+}
+
+.certName {
+  font-family: var(--font-ui), ui-sans-serif, system-ui, sans-serif;
+  font-size: clamp(15px, 2vw, 18px);
+  font-weight: 500;
+  letter-spacing: -0.01em;
+  color: var(--text-primary);
+  line-height: 1.4;
+  flex: 1;
+}
+
+.verifyLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-family: var(--font-mono), ui-monospace, monospace;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text-secondary);
+  margin-top: auto;
+  transition: color var(--transition-fast);
+
+  &:hover {
+    color: var(--color-ember);
+  }
+}

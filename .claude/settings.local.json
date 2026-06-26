@@ -1,0 +1,25 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(lsof -iTCP -sTCP:LISTEN -P -n)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\\\\n\" http://localhost:3000)",
+      "Bash(top -l 2 -pid 3572 -pid 3344 -stats pid,command,cpu,th,state)",
+      "Bash(pkill -f \"next dev\")",
+      "Bash(pkill -f \"start-server.js\")",
+      "Bash(curl -s -o /dev/null -w \"http=%{http_code} time=%{time_total}s\\\\n\" --max-time 8 http://localhost:3004/)",
+      "Bash(curl *)",
+      "Bash(:)",
+      "Bash(pkill -9 -f \"Google Chrome.*--headless\")",
+      "Bash(pkill -9 -f \"next dev\")",
+      "Bash(pkill -9 -f \"next-server\")",
+      "Bash(xargs -r kill -9)",
+      "Bash(rm -rf node_modules/next)",
+      "Bash(npm install *)",
+      "Bash(rm -f /private/tmp/claude-501/-Users-alfirex-Desktop-React-CLOUDE-VIBE-CODDING/1a68b9e2-8b19-4e59-8fe0-23806f808375/scratchpad/dev2.log)",
+      "Bash(npm run *)",
+      "Bash(echo \"dev pid $!\")",
+      "Bash(npx @next/codemod@latest next-experimental-turbo-to-turbopack . --force)",
+      "Bash(npm view *)"
+    ]
+  }
+}

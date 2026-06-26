@@ -1,0 +1,75 @@
+@use 'tokens';
+@use 'reset';
+@use 'typography';
+
+// ── Section base ────────────────────────────────────────────────────
+.section {
+  padding: var(--spacing-120) var(--spacing-48);
+
+  @media (max-width: 768px) {
+    padding: var(--spacing-72) var(--spacing-24);
+  }
+}
+
+.section-label {
+  font-family: var(--font-mono), ui-monospace, monospace;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--color-ember);
+  margin-bottom: var(--spacing-24);
+}
+
+.section-title {
+  font-family: var(--font-display), ui-sans-serif, system-ui, sans-serif;
+  font-size: clamp(48px, 8vw, 96px);
+  line-height: 1;
+  letter-spacing: -0.03em;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: var(--spacing-72);
+}
+
+// ── Ghost button ────────────────────────────────────────────────────
+.btn-ghost {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--spacing-6);
+  padding: var(--spacing-12) var(--spacing-24);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  font-family: var(--font-mono), ui-monospace, monospace;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text-primary);
+  background: transparent;
+  cursor: pointer;
+  transition:
+    border-color var(--transition-fast),
+    color var(--transition-fast),
+    background var(--transition-fast);
+
+  &:hover {
+    border-color: var(--text-primary);
+    background: var(--text-primary);
+    color: var(--bg);
+  }
+}
+
+// ── Status badge ────────────────────────────────────────────────────
+.badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 4px var(--spacing-12);
+  background: var(--color-tangerine);
+  color: var(--color-bone);
+  border-radius: var(--radius);
+  font-family: var(--font-mono), ui-monospace, monospace;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
