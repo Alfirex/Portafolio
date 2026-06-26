@@ -1,3 +1,11 @@
+> ⚠️ **SUPERADO (2026-06-26).** Esta era una referencia de estilo calcada de otro
+> estudio (Dylanbrouwer) y ya **no** describe la web. La identidad vigente es
+> **"València"**: modo claro cálido por defecto, naranja de València (#e2590b) +
+> azul azulejo (#1b5e83) sobre cal (#faf4e9), tipografías **Fraunces** (display) +
+> **Hanken Grotesk** (texto) + **IBM Plex Mono** (datos), y la **retícula de
+> azulejo** como seña. La fuente de verdad son los tokens en `src/styles/_tokens.scss`.
+> Se conserva este documento solo como histórico.
+
 # Dylanbrouwer — Style Reference
 > Monolithic chrome in cinematic fog — massive display type emerging from black-to-white gradient void, with orange as the only chromatic accent that exists.
 

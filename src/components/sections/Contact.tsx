@@ -106,7 +106,7 @@ export default function Contact() {
     <section ref={sectionRef} id="contact" className={styles.section}>
       <div className={styles.inner}>
         <div className={styles.header}>
-          <p className="section-label">04</p>
+          <p className="section-label" aria-hidden="true" />
           <h2 className={`section-title ${styles.title}`}>{t('section_title')}</h2>
           <p className={styles.subtitle}>{t('subtitle')}</p>
         </div>

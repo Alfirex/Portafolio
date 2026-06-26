@@ -4,12 +4,12 @@ import { useGSAP } from '@gsap/react'
 import { gsap, ScrollTrigger } from '@/lib/gsap'
 import styles from './Experience.module.scss'
 
-type JobKey = 'avantio' | 'recexval' | 'florida'
-const JOB_KEYS: JobKey[] = ['avantio', 'recexval', 'florida']
-
 export default function Experience() {
   const t = useTranslations('experience')
   const sectionRef = useRef<HTMLElement>(null)
+
+  // Lee todos los empleos del JSON del idioma activo (orden del fichero).
+  const jobKeys = Object.keys((t.raw('jobs') ?? {}) as Record<string, unknown>)
 
   useGSAP(
     () => {
@@ -72,7 +72,7 @@ export default function Experience() {
 
   return (
     <section ref={sectionRef} id="experience" className={styles.section}>
-      <p className="section-label">01</p>
+      <p className="section-label" aria-hidden="true" />
       <h2 className={`section-title ${styles.title}`}>{t('section_title')}</h2>
 
       <div className={styles.timeline}>
@@ -83,7 +83,7 @@ export default function Experience() {
 
         {/* Job cards */}
         <div className={styles.cards}>
-          {JOB_KEYS.map((key) => (
+          {jobKeys.map((key) => (
             <article key={key} className={styles.card}>
               <div className={styles.dot} aria-hidden="true" />
 

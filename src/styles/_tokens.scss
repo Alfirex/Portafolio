@@ -1,97 +1,128 @@
+// ════════════════════════════════════════════════════════════════════
+//  Sistema "València" — identidad cálida mediterránea
+//  Luz por defecto (València es sol). Naranja = emblema de la ciudad.
+//  Azul azulejo = cerámica modular ≈ componentes front-end en rejilla.
+// ════════════════════════════════════════════════════════════════════
+
 :root {
-  // ── Fonts (loaded via Google Fonts in index.html) ──────────────────
-  --font-display: 'Space Grotesk';
-  --font-ui: 'Inter';
-  --font-mono: 'IBM Plex Mono';
+  // ── Fuentes (cargadas vía Google Fonts en index.html) ──────────────
+  --font-display: 'Fraunces';                 // editorial, cálida, con carácter
+  --font-ui: 'Hanken Grotesk';                // texto/UI
+  --font-mono: 'IBM Plex Mono';               // datos / etiquetas técnicas
 
-  // ── Brand palette (DESIGN.md) ──────────────────────────────────────
-  --color-obsidian: #161616;
-  --color-graphite: #3c3a3e;
-  --color-slate: #7b7a7c;
-  --color-ash: #a2a2a2;
-  --color-mist: #c9c7cc;
-  --color-fog: #f1f1f1;
-  --color-paper: #f8f8f8;
-  --color-bone: #ffffff;
-  --color-ember: #ff4c24;
-  --color-tangerine: #ff6436;
+  // ── Paleta ─────────────────────────────────────────────────────────
+  --color-tinta: #1f160d;     // tinta cálida (texto / superficies oscuras)
+  --color-cafe: #4a3c2c;      // marrón medio
+  --color-arena: #8a7a63;     // gris-arena (texto muted)
+  --color-piedra: #b6a587;    // piedra clara
+  --color-hueso: #faf4e9;     // cal mediterránea (lienzo claro)
+  --color-papel: #f3ead9;     // papel cálido (superficies)
+  --color-bone: #ffffff;      // blanco puro (texto sobre acento)
 
-  // ── Theme tokens — dark default ────────────────────────────────────
-  --bg: #161616;
-  --bg-surface: #1c1c1e;
-  --bg-elevated: #242426;
-  --text-primary: #ffffff;
-  --text-muted: #a2a2a2;
-  --text-secondary: #7b7a7c;
-  --border: #3c3a3e;
-  --border-subtle: #2a2a2c;
+  --color-azulejo: #1b5e83;       // azul cerámica (acento estructural)
+  --color-azulejo-deep: #134258;  // azulejo profundo
+  --color-naranja: #e2590b;       // naranja de València (acento principal)
+  --color-naranja-claro: #f17a1e; // naranja claro (washes / hover)
+
+  // Compatibilidad con nombres antiguos usados por los componentes
+  --color-ember: var(--color-naranja);
+  --color-tangerine: var(--color-naranja-claro);
+  --color-obsidian: var(--color-tinta);
+
+  // ── Tokens de tema — claro por defecto ─────────────────────────────
+  --bg: #faf4e9;
+  --bg-surface: #f3ead9;
+  --bg-elevated: #ffffff;
+  --text-primary: #1f160d;
+  --text-muted: #6e6151;
+  --text-secondary: #9a8c76;
+  --border: #ddccb1;
+  --border-subtle: #ece0cb;
   --nav-bg: transparent;
-  --nav-bg-scrolled: rgba(22, 22, 22, 0.92);
-  --nav-text: #ffffff;
+  --nav-bg-scrolled: rgba(250, 244, 233, 0.82);
+  --nav-text: #1f160d;
 
-  // ── Gradients ──────────────────────────────────────────────────────
-  // Chrome fade: white → silver — clearly visible on dark backgrounds
+  // ── Gradientes ─────────────────────────────────────────────────────
+  // "Atardecer": tinta → naranja para titulares de display
   --gradient-chrome: linear-gradient(
-    180deg,
-    #ffffff 0%,
-    #d4d4d6 30%,
-    #a2a2a2 65%,
-    #6e6c70 100%
+    100deg,
+    var(--color-tinta) 0%,
+    #7a3d12 48%,
+    var(--color-naranja) 100%
   );
-  --gradient-hero-bg: linear-gradient(
-    160deg,
-    #161616 0%,
-    #1e1e20 60%,
-    #2a2a2e 100%
-  );
+  // Fondo hero: cal con sol naranja arriba-dcha + brisa azulejo abajo-izq
+  --gradient-hero-bg:
+    radial-gradient(115% 120% at 88% -8%, rgba(226, 89, 11, 0.16) 0%, rgba(226, 89, 11, 0) 46%),
+    radial-gradient(90% 100% at 0% 108%, rgba(27, 94, 131, 0.1) 0%, rgba(27, 94, 131, 0) 42%),
+    var(--bg);
 
-  // ── Spacing ────────────────────────────────────────────────────────
+  // Velo de legibilidad del hero-vídeo (texto sobre cualquier footage)
+  --hero-scrim:
+    linear-gradient(90deg, #faf4e9 0%, rgba(250, 244, 233, 0.86) 30%, rgba(250, 244, 233, 0.2) 62%, rgba(250, 244, 233, 0) 80%),
+    linear-gradient(0deg, #faf4e9 0%, rgba(250, 244, 233, 0) 42%);
+
+  // ── Azulejo (seña de identidad) ────────────────────────────────────
+  // Mini-mosaico cerámico reutilizable como marca de sección.
+  --azulejo-tile:
+    radial-gradient(circle at 50% 50%, var(--color-naranja) 0 22%, transparent 23%),
+    conic-gradient(
+      from 45deg at 50% 50%,
+      var(--color-azulejo) 0 25%,
+      transparent 0 50%,
+      var(--color-azulejo) 0 75%,
+      transparent 0 100%
+    );
+
+  // ── Espaciado ──────────────────────────────────────────────────────
   --spacing-6: 6px;
   --spacing-12: 12px;
   --spacing-18: 18px;
   --spacing-24: 24px;
+  --spacing-36: 36px;
   --spacing-48: 48px;
   --spacing-60: 60px;
   --spacing-72: 72px;
   --spacing-96: 96px;
   --spacing-120: 120px;
 
-  // ── Border radius ──────────────────────────────────────────────────
-  --radius: 14.4px;
+  // ── Radio (cerámica = esquinas nítidas) ────────────────────────────
+  --radius: 6px;
+  --radius-lg: 10px;
 
   // ── Nav ────────────────────────────────────────────────────────────
   --nav-height: 64px;
 
-  // ── Transitions ────────────────────────────────────────────────────
+  // ── Transiciones ───────────────────────────────────────────────────
   --transition-fast: 150ms ease;
   --transition-base: 300ms ease;
   --transition-slow: 600ms cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-[data-theme='light'] {
-  --bg: #ffffff;
-  --bg-surface: #f8f8f8;
-  --bg-elevated: #f1f1f1;
-  --text-primary: #161616;
-  --text-muted: #7b7a7c;
-  --text-secondary: #a2a2a2;
-  --border: #c9c7cc;
-  --border-subtle: #e8e8e8;
+// ── Tema oscuro — noche cálida valenciana (no negro frío) ────────────
+[data-theme='dark'] {
+  --bg: #161009;
+  --bg-surface: #1f1810;
+  --bg-elevated: #271f15;
+  --text-primary: #faf4e9;
+  --text-muted: #b8a98f;
+  --text-secondary: #8a7c66;
+  --border: #3a3024;
+  --border-subtle: #2a2218;
   --nav-bg: transparent;
-  --nav-bg-scrolled: rgba(255, 255, 255, 0.92);
-  --nav-text: #161616;
+  --nav-bg-scrolled: rgba(22, 16, 9, 0.82);
+  --nav-text: #faf4e9;
 
   --gradient-chrome: linear-gradient(
-    180deg,
-    #161616 0%,
-    #3c3a3e 40%,
-    #7b7a7c 70%,
-    #a2a2a2 100%
+    100deg,
+    var(--color-hueso) 0%,
+    var(--color-naranja-claro) 100%
   );
-  --gradient-hero-bg: linear-gradient(
-    160deg,
-    #f8f8f8 0%,
-    #f1f1f1 60%,
-    #e8e8e8 100%
-  );
+  --gradient-hero-bg:
+    radial-gradient(115% 120% at 88% -8%, rgba(241, 122, 30, 0.2) 0%, rgba(241, 122, 30, 0) 46%),
+    radial-gradient(90% 100% at 0% 108%, rgba(27, 94, 131, 0.22) 0%, rgba(27, 94, 131, 0) 42%),
+    var(--bg);
+
+  --hero-scrim:
+    linear-gradient(90deg, #161009 0%, rgba(22, 16, 9, 0.86) 30%, rgba(22, 16, 9, 0.2) 62%, rgba(22, 16, 9, 0) 80%),
+    linear-gradient(0deg, #161009 0%, rgba(22, 16, 9, 0) 42%);
 }

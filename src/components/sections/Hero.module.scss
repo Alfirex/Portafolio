@@ -1,71 +1,119 @@
-// ── Layout ───────────────────────────────────────────────────────────
+// ── Layout / escenario ───────────────────────────────────────────────
 .hero {
   position: relative;
   min-height: 100dvh;
   display: flex;
   align-items: center;
   overflow: hidden;
-  padding: var(--nav-height) var(--spacing-48) var(--spacing-120);
+  padding: calc(var(--nav-height) + var(--spacing-48)) var(--spacing-48) var(--spacing-120);
 
   @media (max-width: 768px) {
-    padding: var(--nav-height) var(--spacing-24) var(--spacing-96);
+    padding: calc(var(--nav-height) + var(--spacing-24)) var(--spacing-24) var(--spacing-96);
   }
 }
 
+// Capa 0 — fondo de marca (visible si el vídeo no carga)
 .bg {
   position: absolute;
   inset: 0;
-  background: var(--gradient-hero-bg);
   z-index: 0;
+  background: var(--gradient-hero-bg);
 }
 
-.grid {
-  position: relative;
+// Capa 1 — vídeo a pantalla completa (avanzado por scroll)
+.video {
+  position: absolute;
+  inset: 0;
   z-index: 1;
   width: 100%;
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: var(--spacing-36, 36px);
-  align-items: center;
+  height: 100%;
+  object-fit: cover;
+  // si el src falla, el elemento queda transparente y se ve .bg
 }
 
-// ── Texto ─────────────────────────────────────────────────────────────
-.left { display: flex; flex-direction: column; }
+// Capa 2 — velo de legibilidad
+.scrim {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  background: var(--hero-scrim);
+}
 
-.name { display: block; margin-bottom: var(--spacing-24); }
+// Capa 3 — contenido
+.grid {
+  position: relative;
+  z-index: 3;
+  width: 100%;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+}
 
-.nameLine {
+.left {
+  display: flex;
+  flex-direction: column;
+  will-change: opacity;
+}
+
+.eyebrow {
+  font-family: var(--font-mono), ui-monospace, monospace;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--color-azulejo);
+  margin-bottom: var(--spacing-24);
+}
+
+.headline {
+  font-family: var(--font-display), Georgia, serif;
+  font-size: clamp(40px, 6.4vw, 96px);
+  font-weight: 600;
+  line-height: 0.98;
+  letter-spacing: -0.02em;
+  color: var(--text-primary);
+  text-shadow: 0 1px 30px rgba(0, 0, 0, 0.12);
+}
+
+.line {
   display: block;
-  font-family: var(--font-display), ui-sans-serif, system-ui, sans-serif;
-  font-size: clamp(60px, 10vw, 132px);
-  font-weight: 700;
-  line-height: 0.88;
-  letter-spacing: -0.03em;
+  white-space: nowrap;
+
+  @media (max-width: 768px) {
+    white-space: normal;
+  }
 }
 
 .char {
   display: inline-block;
+  white-space: pre;
+  will-change: transform, opacity;
+}
+
+// Línea acentuada: relleno "atardecer" tinta → naranja, en cursiva Fraunces
+.accent .char {
+  font-style: italic;
   background: var(--gradient-chrome);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  will-change: transform, opacity;
 }
 
 .subtitle {
+  max-width: 46ch;
   font-family: var(--font-ui), ui-sans-serif, system-ui, sans-serif;
-  font-size: clamp(14px, 1.8vw, 20px);
-  font-weight: 500;
-  letter-spacing: -0.02em;
+  font-size: clamp(15px, 1.5vw, 18px);
+  font-weight: 400;
+  line-height: 1.55;
+  letter-spacing: -0.01em;
   color: var(--text-muted);
-  margin-top: var(--spacing-12);
-  will-change: opacity, transform;
+  margin-top: var(--spacing-36);
 }
 
-.location {
-  font-size: clamp(12px, 1.2vw, 14px);
-  color: var(--text-secondary);
-  margin-top: var(--spacing-6);
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-12);
+  margin-top: var(--spacing-36);
 }
 
 // ── Metadata ──────────────────────────────────────────────────────────
@@ -73,15 +121,17 @@
   position: absolute;
   bottom: var(--spacing-48);
   left: var(--spacing-48);
-  z-index: 1;
+  z-index: 3;
   display: flex;
-  flex-direction: column;
-  gap: 4px;
+  align-items: center;
+  gap: var(--spacing-12);
   will-change: opacity;
 
   @media (max-width: 768px) {
     left: var(--spacing-24);
-    bottom: var(--spacing-96);
+    bottom: var(--spacing-60);
+    flex-wrap: wrap;
+    gap: var(--spacing-6) var(--spacing-12);
   }
 }
 
@@ -89,9 +139,16 @@
   font-family: var(--font-mono), ui-monospace, monospace;
   font-size: 11px;
   font-weight: 500;
-  letter-spacing: 0.12em;
+  letter-spacing: 0.1em;
   text-transform: uppercase;
   color: var(--text-secondary);
+}
+
+.metaDot {
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: var(--color-naranja);
 }
 
 // ── Scroll hint ───────────────────────────────────────────────────────
@@ -99,14 +156,16 @@
   position: absolute;
   bottom: var(--spacing-48);
   right: var(--spacing-48);
-  z-index: 1;
+  z-index: 3;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: var(--spacing-12);
   will-change: opacity;
 
-  @media (max-width: 768px) { display: none; }
+  @media (max-width: 768px) {
+    display: none;
+  }
 }
 
 .scrollLabel {
@@ -123,11 +182,18 @@
   display: block;
   width: 1px;
   height: 60px;
-  background: linear-gradient(to bottom, var(--color-ember), transparent);
+  background: linear-gradient(to bottom, var(--color-naranja), transparent);
   animation: scrollPulse 2s ease-in-out infinite;
 }
 
 @keyframes scrollPulse {
-  0%, 100% { opacity: 0.4; transform: scaleY(0.8); }
-  50%      { opacity: 1;   transform: scaleY(1);   }
+  0%,
+  100% {
+    opacity: 0.4;
+    transform: scaleY(0.8);
+  }
+  50% {
+    opacity: 1;
+    transform: scaleY(1);
+  }
 }

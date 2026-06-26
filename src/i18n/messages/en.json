@@ -9,10 +9,16 @@
     "toggle_theme_light": "Enable light mode"
   },
   "hero": {
-    "title": "Web Application Developer",
-    "location": "Catarroja, Valencia · Spain",
-    "meta_role": "DEV",
-    "meta_exp": "6+ YRS EXP.",
+    "eyebrow": "Front-end · travel & vacation rentals",
+    "headline_1": "I build the sites",
+    "headline_accent": "where holidays",
+    "headline_2": "begin.",
+    "title": "Alejandro Ajenjo — front-end developer with 6+ years building product for the travel sector, based in València, Spain.",
+    "cta_work": "See work",
+    "cta_talk": "Let's talk",
+    "location": "Catarroja, València",
+    "meta_role": "Front-end",
+    "meta_exp": "6+ years",
     "scroll_hint": "Scroll"
   },
   "about": {
@@ -69,6 +75,13 @@
     "index": "02",
     "section_title": "Education",
     "items": {
+      "dam": {
+        "degree": "HND Multiplatform Application Development",
+        "institution": "Florida Universitaria",
+        "period": "2018 – 2019",
+        "location": "Catarroja, Valencia",
+        "description": "Higher National Diploma focused on the design, development and maintenance of mobile applications. Modules covering Java, Android, databases and application deployment."
+      },
       "daw": {
         "degree": "HND Web Application Development",
         "institution": "Florida Universitaria",
@@ -76,11 +89,11 @@
         "location": "Catarroja, Valencia",
         "description": "Higher National Diploma focused on the design, development and maintenance of web applications. Modules covering HTML, CSS, JavaScript, PHP, databases and application deployment."
       },
-      "bachillerato": {
+      "smr": {
         "degree": "VET Microcomputer Systems and Networks",
-        "institution": "Training centre (update with your real school)",
+        "institution": "Florida Universitaria",
         "period": "2012 – 2014",
-        "location": "Valencia, Spain",
+        "location": "Catarroja, Valencia",
         "description": "Vocational training programme focused on assembling, configuring and maintaining computer equipment and communication networks."
       }
     }

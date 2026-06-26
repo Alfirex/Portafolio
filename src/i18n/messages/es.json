@@ -9,16 +9,22 @@
     "toggle_theme_light": "Activar modo claro"
   },
   "hero": {
-    "title": "Desarrollador de Aplicaciones Web",
-    "location": "Catarroja, Valencia · España",
-    "meta_role": "DEV",
-    "meta_exp": "6+ AÑOS EXP.",
-    "scroll_hint": "Desplázate"
+    "eyebrow": "Front-end  developer",
+    "headline_1": "Construyo las webs",
+    "headline_accent": "donde empiezan",
+    "headline_2": "las vacaciones.",
+    "title": "Alejandro Ajenjo — desarrollador front-end con más de 6 años creando producto para el sector turístico, desde Catarroja (València).",
+    "cta_work": "Ver trabajo",
+    "cta_talk": "Hablemos",
+    "location": "Catarroja, València",
+    "meta_role": "Front-end",
+    "meta_exp": "6+ años",
+    "scroll_hint": "Desliza"
   },
   "about": {
     "tag": "Sobre mí",
-    "headline": "Apasionado del desarrollo web con más de 6 años de experiencia",
-    "p1": "Soy Alejandro Ajenjo Rodríguez, desarrollador web con más de 6 años de experiencia construyendo aplicaciones en el sector turístico y de alquileres vacacionales. Me especializo en el desarrollo front-end, creando interfaces limpias, funcionales y bien diseñadas.",
+    "headline": "Apasionado del desarrollo web con más de 7 años de experiencia",
+    "p1": "Soy Alejandro Ajenjo Rodríguez, desarrollador web con más de 7 años de experiencia construyendo aplicaciones en el sector turístico y de alquileres vacacionales. Me especializo en el desarrollo front-end, creando interfaces limpias, funcionales y bien diseñadas.",
     "p2": "A lo largo de mi carrera he colaborado con equipos ágiles, trabajando con tecnologías como HTML5, CSS3, JavaScript, PHP y MySQL. Disfruto tanto del detalle visual como de la integración con el back-end, buscando siempre la solución más eficiente.",
     "pills": ["Orientado al detalle", "Trabajo en equipo", "Aprendizaje continuo", "Código limpio"],
     "available": "Disponible"
@@ -42,8 +48,8 @@
         "period": "feb. 2019 – dic. 2025",
         "duration": "6 años 11 meses",
         "location": "Parque Tecnológico de Paterna",
-        "description": "Desarrollo de aplicaciones web en el sector turístico y de gestión de alquileres vacacionales.",
-        "skills": ["HTML5", "PHP", "JavaScript", "CSS3", "MySQL", "Git"]
+        "description": "Desarrollo de aplicaciones web en el sector turístico y de gestión de alquileres vacacionales, donde he gestionado centenares de proyectos entregandole webs con diseños personalizados y ademas creacion de nuevos componentes.",
+        "skills": ["HTML5", "PHP", "JavaScript", "CSS3", "Docker", "Git", "React", "Tailwind CSS"]
       },
       "recexval": {
         "title": "Desarrollador Front-end",
@@ -69,18 +75,25 @@
     "index": "02",
     "section_title": "Educación",
     "items": {
+      "dam": {
+        "degree": "CFGS Desarrollo de Aplicaciones Multiplataforma",
+        "institution": "Florida Universitaria",
+        "period": "2018 – 2019",
+        "location": "Catarroja, Valencia",
+        "description": "Ciclo Formativo de Grado Superior enfocado en el diseño, desarrollo y mantenimiento de aplicaciones mobiles. Módulos de Java, Android, bases de datos y despliegue de aplicaciones."
+      },
       "daw": {
         "degree": "CFGS Desarrollo de Aplicaciones Web",
         "institution": "Florida Universitaria",
-        "period": "2014 – 2016",
+        "period": "2016 – 2018",
         "location": "Catarroja, Valencia",
         "description": "Ciclo Formativo de Grado Superior enfocado en el diseño, desarrollo y mantenimiento de aplicaciones web. Módulos de HTML, CSS, JavaScript, PHP, bases de datos y despliegue de aplicaciones."
       },
-      "bachillerato": {
+      "smr": {
         "degree": "CFGM Sistemas Microinformáticos y Redes",
-        "institution": "Centro formativo (actualiza con tu centro real)",
-        "period": "2012 – 2014",
-        "location": "Valencia, España",
+        "institution": "Florida Universitaria",
+        "period": "2014 – 2016",
+        "location": "Catarroja, Valencia",
         "description": "Ciclo Formativo de Grado Medio orientado al montaje, configuración y mantenimiento de equipos y redes de comunicación."
       }
     }

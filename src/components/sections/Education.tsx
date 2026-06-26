@@ -3,14 +3,13 @@ import { useTranslations } from '@/i18n'
 import { gsap, useGSAP } from '@/lib/gsap'
 import styles from './Education.module.scss'
 
-// ─── Actualiza estos datos con tu formación real ─────────────────────
-type EduKey = 'daw' | 'bachillerato'
-const EDU_KEYS: EduKey[] = ['daw', 'bachillerato']
-// ─────────────────────────────────────────────────────────────────────
-
 export default function Education() {
   const t = useTranslations('education')
   const sectionRef = useRef<HTMLElement>(null)
+
+  // Lee todas las titulaciones del JSON del idioma activo (orden del fichero).
+  const items = (t.raw('items') ?? {}) as Record<string, unknown>
+  const eduKeys = Object.keys(items)
 
   useGSAP(
     () => {
@@ -39,7 +38,7 @@ export default function Education() {
 
   return (
     <section ref={sectionRef} id="education" className={styles.section}>
-      <p className="section-label">{t('index')}</p>
+      <p className="section-label" aria-hidden="true" />
       <h2 className={`section-title ${styles.title}`}>{t('section_title')}</h2>
 
       <div className={styles.timeline}>
@@ -48,7 +47,7 @@ export default function Education() {
         </div>
 
         <div className={styles.cards}>
-          {EDU_KEYS.map((key) => (
+          {eduKeys.map((key) => (
             <article key={key} className={styles.card}>
               <div className={styles.dot} aria-hidden="true" />
               <div className={styles.cardInner}>

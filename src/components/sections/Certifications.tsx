@@ -43,7 +43,7 @@ export default function Certifications() {
 
   return (
     <section ref={sectionRef} id="certifications" className={styles.section}>
-      <p className="section-label">{t('index')}</p>
+      <p className="section-label" aria-hidden="true" />
       <h2 className={`section-title ${styles.title}`}>{t('section_title')}</h2>
 
       <div className={styles.grid}>

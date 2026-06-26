@@ -39,27 +39,27 @@
 }
 
 .heading {
-  font-family: var(--font-display), ui-sans-serif, system-ui, sans-serif;
+  font-family: var(--font-display), Georgia, serif;
   font-size: 54px;
-  line-height: 1.1;
-  letter-spacing: -1.62px;
+  line-height: 1.06;
+  letter-spacing: -0.02em;
   font-weight: 600;
 }
 
 .heading-lg {
-  font-family: var(--font-display), ui-sans-serif, system-ui, sans-serif;
-  font-size: clamp(48px, 8vw, 96px);
-  line-height: 1;
-  letter-spacing: -0.03em;
-  font-weight: 700;
+  font-family: var(--font-display), Georgia, serif;
+  font-size: clamp(46px, 7.5vw, 92px);
+  line-height: 0.98;
+  letter-spacing: -0.018em;
+  font-weight: 600;
 }
 
 .display {
-  font-family: var(--font-display), ui-sans-serif, system-ui, sans-serif;
-  font-size: clamp(80px, 18vw, 200px);
-  line-height: 0.85;
-  letter-spacing: -0.03em;
-  font-weight: 700;
+  font-family: var(--font-display), Georgia, serif;
+  font-size: clamp(76px, 17vw, 190px);
+  line-height: 0.9;
+  letter-spacing: -0.02em;
+  font-weight: 600;
 }
 
 .chrome-text {

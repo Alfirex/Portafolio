@@ -50,3 +50,16 @@ Thumbs.db
 *.njsproj
 *.sln
 *.sw?
+
+# ── Skills instaladas (herramientas locales, no la web) ────────────
+.agents/
+.claude/skills/
+skills-lock.json
+
+# ── Vídeo del hero (lo aporta cada uno; no se versiona) ────────────
+# El poster sí se versiona. Coloca tu hero.mp4 según public/HERO_VIDEO.md
+public/hero.mp4
+
+# ── Restos duplicados de macOS (" 2" en el nombre) ─────────────────
+* 2.*
+*_es 2.json

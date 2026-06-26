@@ -9,11 +9,17 @@
     "toggle_theme_light": "Activar mode clar"
   },
   "hero": {
-    "title": "Desenvolupador d'Aplicacions Web",
-    "location": "Catarroja, València · Espanya",
-    "meta_role": "DEV",
-    "meta_exp": "6+ ANYS EXP.",
-    "scroll_hint": "Desplaça't"
+    "eyebrow": "Front-end · turisme i lloguer vacacional",
+    "headline_1": "Construïsc els webs",
+    "headline_accent": "on comencen",
+    "headline_2": "les vacances.",
+    "title": "Alejandro Ajenjo — desenvolupador front-end amb més de 6 anys creant producte per al sector turístic, des de Catarroja (València).",
+    "cta_work": "Veure treball",
+    "cta_talk": "Parlem",
+    "location": "Catarroja, València",
+    "meta_role": "Front-end",
+    "meta_exp": "+6 anys",
+    "scroll_hint": "Llisca"
   },
   "about": {
     "tag": "Sobre mi",
@@ -69,6 +75,13 @@
     "index": "02",
     "section_title": "Educació",
     "items": {
+      "dam": {
+        "degree": "CFGS Desenvolupament d'Aplicacions Multiplataforma",
+        "institution": "Florida Universitària",
+        "period": "2018 – 2019",
+        "location": "Catarroja, València",
+        "description": "Cicle Formatiu de Grau Superior enfocat en el disseny, desenvolupament i manteniment d'aplicacions mòbils. Mòduls de Java, Android, bases de dades i desplegament d'aplicacions."
+      },
       "daw": {
         "degree": "CFGS Desenvolupament d'Aplicacions Web",
         "institution": "Florida Universitària",
@@ -76,11 +89,11 @@
         "location": "Catarroja, València",
         "description": "Cicle Formatiu de Grau Superior enfocat en el disseny, desenvolupament i manteniment d'aplicacions web. Mòduls d'HTML, CSS, JavaScript, PHP, bases de dades i desplegament d'aplicacions."
       },
-      "bachillerato": {
+      "smr": {
         "degree": "CFGM Sistemes Microinformàtics i Xarxes",
-        "institution": "Centre formatiu (actualitza amb el teu centre real)",
+        "institution": "Florida Universitària",
         "period": "2012 – 2014",
-        "location": "València, Espanya",
+        "location": "Catarroja, València",
         "description": "Cicle Formatiu de Grau Mitjà orientat al muntatge, configuració i manteniment d'equips i xarxes de comunicació."
       }
     }

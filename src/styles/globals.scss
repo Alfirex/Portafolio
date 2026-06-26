@@ -11,22 +11,25 @@
   }
 }
 
+// ── Section opener mark — azulejo (la seña de identidad) ────────────
+// Mosaico cerámico modular: encarna "componentes front-end en rejilla".
 .section-label {
-  font-family: var(--font-mono), ui-monospace, monospace;
-  font-size: 12px;
-  font-weight: 600;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  color: var(--color-ember);
+  width: 30px;
+  height: 30px;
+  border-radius: 4px;
+  background: var(--azulejo-tile);
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border);
   margin-bottom: var(--spacing-24);
+  box-shadow: 0 1px 0 rgba(31, 22, 13, 0.04);
 }
 
 .section-title {
-  font-family: var(--font-display), ui-sans-serif, system-ui, sans-serif;
-  font-size: clamp(48px, 8vw, 96px);
+  font-family: var(--font-display), Georgia, serif;
+  font-size: clamp(44px, 7vw, 88px);
   line-height: 1;
-  letter-spacing: -0.03em;
-  font-weight: 700;
+  letter-spacing: -0.02em;
+  font-weight: 600;
   color: var(--text-primary);
   margin-bottom: var(--spacing-72);
 }
@@ -53,9 +56,37 @@
     background var(--transition-fast);
 
   &:hover {
-    border-color: var(--text-primary);
-    background: var(--text-primary);
-    color: var(--bg);
+    border-color: var(--color-naranja);
+    background: var(--color-naranja);
+    color: var(--color-bone);
+  }
+}
+
+// ── Solid primary action — naranja València ─────────────────────────
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--spacing-6);
+  padding: var(--spacing-12) var(--spacing-24);
+  border: 1px solid var(--color-naranja);
+  border-radius: var(--radius);
+  font-family: var(--font-mono), ui-monospace, monospace;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-bone);
+  background: var(--color-naranja);
+  cursor: pointer;
+  transition:
+    background var(--transition-fast),
+    border-color var(--transition-fast),
+    transform var(--transition-fast);
+
+  &:hover {
+    background: var(--color-naranja-claro);
+    border-color: var(--color-naranja-claro);
+    transform: translateY(-1px);
   }
 }
 
@@ -64,7 +95,7 @@
   display: inline-flex;
   align-items: center;
   padding: 4px var(--spacing-12);
-  background: var(--color-tangerine);
+  background: var(--color-naranja);
   color: var(--color-bone);
   border-radius: var(--radius);
   font-family: var(--font-mono), ui-monospace, monospace;
@@ -72,4 +103,16 @@
   font-weight: 600;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+}
+
+// ── Accessibility: respeta reduce-motion ────────────────────────────
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
 }

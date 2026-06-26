@@ -47,7 +47,7 @@ export default function Projects() {
 
   return (
     <section ref={sectionRef} id="projects" className={styles.section}>
-      <p className="section-label">03</p>
+      <p className="section-label" aria-hidden="true" />
       <h2 className={`section-title ${styles.title}`}>{t('section_title')}</h2>
 
       <p className={styles.description}>{t('description')}</p>

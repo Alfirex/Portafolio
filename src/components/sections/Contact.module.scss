@@ -203,7 +203,7 @@
   width: 40px;
   height: 40px;
   background: rgba(var(--color-ember), 0.1);
-  background: rgba(255, 76, 36, 0.1);
+  background: rgba(226, 89, 11, 0.1);
   color: var(--color-ember);
   border-radius: 50%;
   font-size: 18px;
@@ -276,7 +276,7 @@
   &:hover {
     border-color: var(--color-ember);
     color: var(--color-ember);
-    background: rgba(255, 76, 36, 0.04);
+    background: rgba(226, 89, 11, 0.04);
   }
 }
 
@@ -285,7 +285,7 @@
   color: var(--color-ember);
 
   &:hover {
-    background: rgba(255, 76, 36, 0.08);
+    background: rgba(226, 89, 11, 0.08);
   }
 }
 

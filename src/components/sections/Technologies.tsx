@@ -94,7 +94,7 @@ export default function Technologies() {
 
   return (
     <section ref={sectionRef} id="technologies" className={styles.section}>
-      <p className="section-label">02</p>
+      <p className="section-label" aria-hidden="true" />
       <h2 className={`section-title ${styles.title}`}>{t('section_title')}</h2>
       <p className={styles.description}>{t('description')}</p>
 

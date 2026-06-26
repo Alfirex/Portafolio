@@ -19,7 +19,8 @@
       "Bash(npm run *)",
       "Bash(echo \"dev pid $!\")",
       "Bash(npx @next/codemod@latest next-experimental-turbo-to-turbopack . --force)",
-      "Bash(npm view *)"
+      "Bash(npm view *)",
+      "Bash(git add *)"
     ]
   }
 }
