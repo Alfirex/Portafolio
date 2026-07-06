@@ -13,6 +13,7 @@ import Technologies from '@/components/sections/Technologies'
 import Certifications from '@/components/sections/Certifications'
 import Projects from '@/components/sections/Projects'
 import Contact from '@/components/sections/Contact'
+import { HeroSection } from '@/components/blocks/hero-section-4'
 
 import es from '@/i18n/messages/es.json'
 import ca from '@/i18n/messages/ca.json'
@@ -53,10 +54,33 @@ function LocaleLayout() {
 
   return (
     <IntlProvider locale={locale} messages={messagesByLocale[locale]}>
-      <HomePage />
+      {/* PRUEBA: Hero shadcn/Tailwind en la home.
+          Para volver al portfolio, cambia <HeroTrial /> por <HomePage />. */}
+      <HeroTrial />
     </IntlProvider>
   )
 }
+
+// Hero shadcn (con su nav) + las secciones del portfolio debajo.
+function HeroTrial() {
+  return (
+    <div className="bg-background text-foreground">
+      <HeroSection />
+      <About />
+      <Stats />
+      <Experience />
+      <Education />
+      <Technologies />
+      <Certifications />
+      <Projects />
+      <Contact />
+      <Footer />
+    </div>
+  )
+}
+
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+void HomePage
 
 export default function App() {
   return (

@@ -2,110 +2,112 @@
 @use 'reset';
 @use 'typography';
 
-// ── Section base ────────────────────────────────────────────────────
-.section {
-  padding: var(--spacing-120) var(--spacing-48);
+@layer portfolio {
+  // ── Section base ────────────────────────────────────────────────────
+  .section {
+    padding: var(--spacing-120) var(--spacing-48);
 
-  @media (max-width: 768px) {
-    padding: var(--spacing-72) var(--spacing-24);
+    @media (max-width: 768px) {
+      padding: var(--spacing-72) var(--spacing-24);
+    }
   }
-}
 
-// ── Section opener mark — azulejo (la seña de identidad) ────────────
-// Mosaico cerámico modular: encarna "componentes front-end en rejilla".
-.section-label {
-  width: 30px;
-  height: 30px;
-  border-radius: 4px;
-  background: var(--azulejo-tile);
-  background-color: var(--bg-surface);
-  border: 1px solid var(--border);
-  margin-bottom: var(--spacing-24);
-  box-shadow: 0 1px 0 rgba(31, 22, 13, 0.04);
-}
+  // ── Section opener mark — azulejo (la seña de identidad) ────────────
+  // Mosaico cerámico modular: encarna "componentes front-end en rejilla".
+  .section-label {
+    width: 30px;
+    height: 30px;
+    border-radius: 4px;
+    background: var(--azulejo-tile);
+    background-color: var(--bg-surface);
+    border: 1px solid var(--border);
+    margin-bottom: var(--spacing-24);
+    box-shadow: 0 1px 0 rgba(31, 22, 13, 0.04);
+  }
 
-.section-title {
-  font-family: var(--font-display), Georgia, serif;
-  font-size: clamp(44px, 7vw, 88px);
-  line-height: 1;
-  letter-spacing: -0.02em;
-  font-weight: 600;
-  color: var(--text-primary);
-  margin-bottom: var(--spacing-72);
-}
+  .section-title {
+    font-family: var(--font-display), Georgia, serif;
+    font-size: clamp(44px, 7vw, 88px);
+    line-height: 1;
+    letter-spacing: -0.02em;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: var(--spacing-72);
+  }
 
-// ── Ghost button ────────────────────────────────────────────────────
-.btn-ghost {
-  display: inline-flex;
-  align-items: center;
-  gap: var(--spacing-6);
-  padding: var(--spacing-12) var(--spacing-24);
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
-  font-family: var(--font-mono), ui-monospace, monospace;
-  font-size: 12px;
-  font-weight: 500;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  color: var(--text-primary);
-  background: transparent;
-  cursor: pointer;
-  transition:
-    border-color var(--transition-fast),
-    color var(--transition-fast),
-    background var(--transition-fast);
+  // ── Ghost button ────────────────────────────────────────────────────
+  .btn-ghost {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--spacing-6);
+    padding: var(--spacing-12) var(--spacing-24);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    font-family: var(--font-mono), ui-monospace, monospace;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--text-primary);
+    background: transparent;
+    cursor: pointer;
+    transition:
+      border-color var(--transition-fast),
+      color var(--transition-fast),
+      background var(--transition-fast);
 
-  &:hover {
-    border-color: var(--color-naranja);
+    &:hover {
+      border-color: var(--color-naranja);
+      background: var(--color-naranja);
+      color: var(--color-bone);
+    }
+  }
+
+  // ── Solid primary action — naranja València ─────────────────────────
+  .btn-primary {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--spacing-6);
+    padding: var(--spacing-12) var(--spacing-24);
+    border: 1px solid var(--color-naranja);
+    border-radius: var(--radius);
+    font-family: var(--font-mono), ui-monospace, monospace;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--color-bone);
+    background: var(--color-naranja);
+    cursor: pointer;
+    transition:
+      background var(--transition-fast),
+      border-color var(--transition-fast),
+      transform var(--transition-fast);
+
+    &:hover {
+      background: var(--color-naranja-claro);
+      border-color: var(--color-naranja-claro);
+      transform: translateY(-1px);
+    }
+  }
+
+  // ── Status badge ────────────────────────────────────────────────────
+  .badge {
+    display: inline-flex;
+    align-items: center;
+    padding: 4px var(--spacing-12);
     background: var(--color-naranja);
     color: var(--color-bone);
+    border-radius: var(--radius);
+    font-family: var(--font-mono), ui-monospace, monospace;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
   }
 }
 
-// ── Solid primary action — naranja València ─────────────────────────
-.btn-primary {
-  display: inline-flex;
-  align-items: center;
-  gap: var(--spacing-6);
-  padding: var(--spacing-12) var(--spacing-24);
-  border: 1px solid var(--color-naranja);
-  border-radius: var(--radius);
-  font-family: var(--font-mono), ui-monospace, monospace;
-  font-size: 12px;
-  font-weight: 600;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  color: var(--color-bone);
-  background: var(--color-naranja);
-  cursor: pointer;
-  transition:
-    background var(--transition-fast),
-    border-color var(--transition-fast),
-    transform var(--transition-fast);
-
-  &:hover {
-    background: var(--color-naranja-claro);
-    border-color: var(--color-naranja-claro);
-    transform: translateY(-1px);
-  }
-}
-
-// ── Status badge ────────────────────────────────────────────────────
-.badge {
-  display: inline-flex;
-  align-items: center;
-  padding: 4px var(--spacing-12);
-  background: var(--color-naranja);
-  color: var(--color-bone);
-  border-radius: var(--radius);
-  font-family: var(--font-mono), ui-monospace, monospace;
-  font-size: 11px;
-  font-weight: 600;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-}
-
-// ── Accessibility: respeta reduce-motion ────────────────────────────
+// ── Accessibility: respeta reduce-motion (global, fuera de capa) ─────
 @media (prefers-reduced-motion: reduce) {
   *,
   *::before,

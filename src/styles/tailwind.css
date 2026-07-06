@@ -1,0 +1,102 @@
+/* Orden de capas: el CSS del portfolio va en `portfolio`, por debajo de las
+   utilidades de Tailwind (así el Hero gana) y por encima del preflight base
+   (así el portfolio no se altera). */
+@layer theme, base, portfolio, components, utilities;
+
+/* Acotamos el auto-escaneo de Tailwind a src/ (evita .agents/skills, symlinks,
+   public/hero.mp4, node_modules… que colgaban la generación de CSS). */
+@import 'tailwindcss' source('../');
+
+/* El toggle del portfolio usa el atributo [data-theme='dark'], no la clase .dark. */
+@custom-variant dark (&:where([data-theme='dark'], [data-theme='dark'] *));
+
+/* Tokens shadcn (escala neutra). No definimos --radius ni --border-* para no
+   pisar los tokens SCSS del portfolio (que se cargan después). */
+/* Tokens shadcn re-tematizados a la identidad "València" */
+:root {
+  --background: #faf4e9;
+  --foreground: #1f160d;
+  --card: #ffffff;
+  --card-foreground: #1f160d;
+  --popover: #ffffff;
+  --popover-foreground: #1f160d;
+  --primary: #e2590b;
+  --primary-foreground: #ffffff;
+  --secondary: #f3ead9;
+  --secondary-foreground: #1f160d;
+  --muted: #f3ead9;
+  --muted-foreground: #6e6151;
+  --accent: #f3ead9;
+  --accent-foreground: #1f160d;
+  --destructive: #b42318;
+  --destructive-foreground: #ffffff;
+  --shadcn-border: #ddccb1;
+  --input: #ddccb1;
+  --ring: #e2590b;
+}
+
+/* Modo oscuro — noche cálida València (en sync con [data-theme='dark']) */
+[data-theme='dark'] {
+  --background: #161009;
+  --foreground: #faf4e9;
+  --card: #1f1810;
+  --card-foreground: #faf4e9;
+  --popover: #1f1810;
+  --popover-foreground: #faf4e9;
+  --primary: #e2590b;
+  --primary-foreground: #ffffff;
+  --secondary: #271f15;
+  --secondary-foreground: #faf4e9;
+  --muted: #271f15;
+  --muted-foreground: #b8a98f;
+  --accent: #271f15;
+  --accent-foreground: #faf4e9;
+  --destructive: #d9483b;
+  --destructive-foreground: #ffffff;
+  --shadcn-border: #3a3024;
+  --input: #3a3024;
+  --ring: #f17a1e;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--shadcn-border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+}
+
+/* Color de borde por defecto estilo shadcn para utilidades `border*` */
+@layer base {
+  *,
+  ::after,
+  ::before {
+    border-color: var(--color-border);
+  }
+}
+
+/* Cursor parpadeante del editor de código del hero */
+@keyframes caret-blink {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+

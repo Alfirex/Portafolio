@@ -1,5 +1,6 @@
 import { defineConfig, type Plugin } from 'vite'
 import react from '@vitejs/plugin-react'
+import tailwindcss from '@tailwindcss/vite'
 import path from 'path'
 
 /**
@@ -50,7 +51,7 @@ function contactApi(): Plugin {
 }
 
 export default defineConfig({
-  plugins: [react(), contactApi()],
+  plugins: [react(), tailwindcss(), contactApi()],
   resolve: {
     alias: {
       '@': path.resolve(__dirname, './src'),
